@@ -16,17 +16,17 @@ The Model-View-Controller (MVC) pattern is a software architectural design that 
 
 Laravel adopts MVC to encourage modularity, maintainability, and clean code organization. Request data moves from the user's browser, through routes to the controller, and resolves into a structured View output for the client.
 
-![MVC Architecture Diagram](documentation/architecture-diagram.png)
+![MVC Architecture Diagram](documentation/architecture_diagram.png)
 
 ## 4. Laravel Routing
 Laravel routing maps incoming URL requests to specific controller actions or closure functions. Utilizing named routes simplifies link generation across Blade views and prevents broken hyperlinks if URL patterns change in the future. All application endpoints handle HTTP `GET` requests to display static and dynamic pages efficiently.
 
-![Routes File](screenshots/routes-code.png)
+![Routes File](screenshots/vscode_setup/routes.png)
 
 ## 5. Controllers
 Controllers organize application logic by grouping related request handling into dedicated methods within a single class file. In this project, `CompanyController.php` acts as the primary handler, containing methods that return views for the Home, About, Services, and Contact pages while passing necessary data arrays to the view templates.
 
-![Company Controller](screenshots/controller-code.png)
+![Company Controller](screenshots/vscode_setup/controller.png)
 
 ## 6. Blade Templating Engine
 Laravel’s Blade templating engine allows developers to write clean HTML enhanced with concise control structures. Blade layouts enable master layout definitions through `@extends` and `@yield` directives, ensuring uniform styling across pages. Reusable UI elements, such as navigation bars and footers, are incorporated cleanly via `@include` and custom Blade components.
